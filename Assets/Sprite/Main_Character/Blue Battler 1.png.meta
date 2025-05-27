@@ -1,0 +1,1373 @@
+fileFormatVersion: 2
+guid: abb3faf8ccf2e6b4f82e45241639b909
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue Battler_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 416
+        width: 15
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6116618, y: 0.008724213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc04098d0112df43a641453a120b903
+      internalID: 372685316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 416
+        width: 8
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448c5805b67616948af2c5a21eef6bd1
+      internalID: -1177366498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 416
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6395776, y: 0.008724213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912152c31b733ad4980f0ee5c17a4100
+      internalID: -1597290475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 416
+        width: 8
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9a4e503ffc087468a4ab8327f441b9
+      internalID: 1746313449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 384
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6395772, y: 0.0077537256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8525ffe2b15a834f882bba6033966ac
+      internalID: 259513653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 384
+        width: 8
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c11db095d068a43a94cc53fee50c98
+      internalID: 282059645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 384
+        width: 18
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e835295a9585240b8fb13c7c0818a5
+      internalID: 680072682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_7
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 384
+        width: 8
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e574ee6c9b89147abf322328acb55b
+      internalID: 2096324170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 352
+        width: 18
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ba484f581c26640a59f3314752a45c
+      internalID: -1935571525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 352
+        width: 20
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ad5fcf83cd563459d924f420c7d788
+      internalID: -880393817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 352
+        width: 29
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3238899, y: 0.009669911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79c6783c3176204d8d871808aff202e
+      internalID: -1149743202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_11
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 352
+        width: 28
+        height: 22
+      alignment: 9
+      pivot: {x: 0.30239978, y: 0.009669911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6747150b44fca31498f1f8d5d6e08fd2
+      internalID: 1640404306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 320
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d055f20b7f4390f458715c3719a82285
+      internalID: 1556128502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 320
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35175b48f2d3c0645a6e6890c6b3b408
+      internalID: -669978987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 320
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113ccc7fad7d6bf48899b43d8e14a5d1
+      internalID: -570768161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_15
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 320
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7e841c2f11573488ab0133146b528c
+      internalID: -930992488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 288
+        width: 11
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56ffdb4341eaa14ead42c6c333c694f
+      internalID: 1278238505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_17
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 289
+        width: 11
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ec7ad0ec6a16441909b8f322ac9f4a
+      internalID: -1319960108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_22
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 264
+        width: 25
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6148074, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea52fdf71a1c40f4aa2e17c3626c5e83
+      internalID: 2122554891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 290
+        width: 11
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab74eeda5017e84e99ff3955e0581a6
+      internalID: -918034874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 256
+        width: 18
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee70416d23ef274581b2096aaf78c9f
+      internalID: 245925949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 256
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f34100c490c1f4ab47bb9f7803d639
+      internalID: 1767259311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_23
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 259
+        width: 17
+        height: 25
+      alignment: 9
+      pivot: {x: 0.6746602, y: 0.0012756347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd914b704cea3984eae3566d30ee5562
+      internalID: 3206526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 224
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4255999e9ffdb44e805f87ca9e995fc
+      internalID: -1239812002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 224
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5f795a5e6782046a83e35cab65f893
+      internalID: -1658657363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 224
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ae4a8b465a0934cb34a97eeb660b84
+      internalID: 1181975693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_31
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 192
+        width: 34
+        height: 32
+      alignment: 9
+      pivot: {x: 0.39795595, y: -0.0000019902768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1905727b878224449e75f4655782b0c
+      internalID: -320495419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 192
+        width: 18
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531ad62f0e8a4b841a4325bc89e6ef07
+      internalID: -1638831084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_29
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 192
+        width: 22
+        height: 21
+      alignment: 9
+      pivot: {x: 0.61469305, y: -0.000000726609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128d413d4e807b84eb9c8c90b0459aba
+      internalID: 1969981444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 192
+        width: 32
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3324406, y: -0.00000061035155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46364206e7e303c4b9dcc588e405b14b
+      internalID: -63607957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 160
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a018a4d5796b5e64a8dab6f823ace428
+      internalID: -415791379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_33
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 160
+        width: 15
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9993002a63408b545a69c2fdaef276a3
+      internalID: 1833134752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_34
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 160
+        width: 15
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8d719a2609a8449b3f52b682c5b9cb
+      internalID: 1430197956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_35
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 160
+        width: 22
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5787728, y: 0.014441808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbe205e4d17d644aae82fd64de7083b
+      internalID: -1880717005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ad8b987ffc2d24f86684495d96a62b
+      internalID: 650955853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 128
+        width: 18
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4dd800e80628242bf40ec90d2280e3
+      internalID: 279694700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_38
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 128
+        width: 18
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c335d77c88b7441892d3e193695954
+      internalID: 1192374704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_39
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 128
+        width: 18
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab3234aa7011a449ac5def4eca750b3
+      internalID: 342014047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 99
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4a5102b6d619648be9dd23e2ebd99b
+      internalID: 1486136412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_41
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 99
+        width: 14
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939610302f6b7e9478bec8dddcf10a13
+      internalID: -1423156367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_42
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 99
+        width: 14
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11912242600c9684fabcfcb3525aaffd
+      internalID: 1475500757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_43
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 99
+        width: 14
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3a0cd14a415b54582de710a15c6aa1
+      internalID: -454722465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_44
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 18
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690a2b9f740257046a2ddde0441fa2b6
+      internalID: -65222397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 34
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a62c972367a8546bbb4faa8f05ea7d
+      internalID: 1991929563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_46
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 64
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.38416108, y: 0.00000056514034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c28578affcb16d4282b793dd2b9f4fc
+      internalID: 252083754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_47
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 64
+        width: 23
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a160eb400065a4db2d14d15018137a
+      internalID: -266735878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_48
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 32
+        width: 18
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d684f9e32a8ad479ac166733f62d73
+      internalID: 121468546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_50
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 32
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a501dbc939e00f84685590f5ad888b97
+      internalID: -173153067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_51
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 32
+        width: 27
+        height: 31
+      alignment: 9
+      pivot: {x: 0.39274144, y: 0.000000492219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1817fb9cb72d15046b6c51ef09f2759f
+      internalID: -778533576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_52
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 22
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02da870978d6d64b9e702c2e968f3eb
+      internalID: -517237780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_53
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 10
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5d34ba95596f84794a4ab2f368b7cd
+      internalID: -1620554590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_54
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae96f34739a9d4d8242374f3478771
+      internalID: 418756782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_55
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 10
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95a11ff8b624d74f8c7a79916b88f8b
+      internalID: -295048460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_18
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 288
+        width: 11
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5181adc411329bf4299d79c9568b724c
+      internalID: 201661068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_27
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 224
+        width: 25
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb821092d63b0a34893712bc0ebd60f1
+      internalID: -1375620738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Battler_45
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 64
+        width: 20
+        height: 26
+      alignment: 9
+      pivot: {x: 0.59653205, y: 0.0000005868765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ff16eb7731cb540b1914f096acaa08
+      internalID: -709545085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Blue Battler_0: 372685316
+      Blue Battler_1: -1177366498
+      Blue Battler_10: -1149743202
+      Blue Battler_11: 1640404306
+      Blue Battler_12: 1556128502
+      Blue Battler_13: -669978987
+      Blue Battler_14: -570768161
+      Blue Battler_15: -930992488
+      Blue Battler_16: 1278238505
+      Blue Battler_17: -1319960108
+      Blue Battler_18: 201661068
+      Blue Battler_19: -918034874
+      Blue Battler_2: -1597290475
+      Blue Battler_20: 245925949
+      Blue Battler_21: 1767259311
+      Blue Battler_22: 2122554891
+      Blue Battler_23: 3206526
+      Blue Battler_24: -1239812002
+      Blue Battler_25: -1658657363
+      Blue Battler_26: 1181975693
+      Blue Battler_27: -1375620738
+      Blue Battler_28: -1638831084
+      Blue Battler_29: 1969981444
+      Blue Battler_3: 1746313449
+      Blue Battler_30: -63607957
+      Blue Battler_31: -320495419
+      Blue Battler_32: -415791379
+      Blue Battler_33: 1833134752
+      Blue Battler_34: 1430197956
+      Blue Battler_35: -1880717005
+      Blue Battler_36: 650955853
+      Blue Battler_37: 279694700
+      Blue Battler_38: 1192374704
+      Blue Battler_39: 342014047
+      Blue Battler_4: 259513653
+      Blue Battler_40: 1486136412
+      Blue Battler_41: -1423156367
+      Blue Battler_42: 1475500757
+      Blue Battler_43: -454722465
+      Blue Battler_44: -65222397
+      Blue Battler_45: -709545085
+      Blue Battler_46: 252083754
+      Blue Battler_47: -266735878
+      Blue Battler_48: 121468546
+      Blue Battler_49: 1991929563
+      Blue Battler_5: 282059645
+      Blue Battler_50: -173153067
+      Blue Battler_51: -778533576
+      Blue Battler_52: -517237780
+      Blue Battler_53: -1620554590
+      Blue Battler_54: 418756782
+      Blue Battler_55: -295048460
+      Blue Battler_56: -340169017
+      Blue Battler_6: 680072682
+      Blue Battler_7: 2096324170
+      Blue Battler_8: -1935571525
+      Blue Battler_9: -880393817
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
