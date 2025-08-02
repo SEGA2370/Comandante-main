@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using YG;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] GameObject prevScene;
@@ -30,19 +30,25 @@ public class SceneLoader : MonoBehaviour
     }
     public void PlayGame()
     {
-        // If the options panel is currently open, treat this as “Continue”
         if (optionPanel != null && optionPanel.activeSelf)
         {
-            // hide panel and un-pause
             optionPanel.SetActive(false);
             Time.timeScale = 1f;
+            return;
         }
-        else
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadSceneAsync(1);
-        }
+
+        Time.timeScale = 1f;
+
+        int sceneToLoad = SaveSystem.HasSavedProgress() ? SaveSystem.LoadLevelProgress() : 1;
+        SceneManager.LoadScene(sceneToLoad);
     }
+
+    public void ResetProgressAndRestart()
+    {
+        SaveSystem.ResetProgress();
+        SceneManager.LoadScene(1); // или SceneManager.GetActiveScene().buildIndex
+    }
+
     public void GoToMenu()
     { 
         SceneManager.LoadScene(0);
@@ -56,13 +62,42 @@ public class SceneLoader : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
-        SceneManager.LoadScene(nextSceneIndex);
+
+        SaveSystem.SaveLevelProgress(nextSceneIndex);
+
+        if (YG2.isTimerAdvCompleted)
+        {
+            YG2.InterstitialAdvShow();
+            YG2.onCloseInterAdv += () =>
+            {
+                SceneManager.LoadScene(nextSceneIndex);
+                YG2.onCloseInterAdv = null; // Отписаться
+            };
+        }
+        else
+        {
+            // Слишком рано — пропустить показ и просто перейти
+            SceneManager.LoadScene(nextSceneIndex);
+        }
     }
     public void LoadPreviousScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int previousSceneIndex = currentSceneIndex - 1;
-        SceneManager.LoadScene(previousSceneIndex);
+        if (YG2.isTimerAdvCompleted)
+        {
+            YG2.InterstitialAdvShow();
+            YG2.onCloseInterAdv += () =>
+            {
+                SceneManager.LoadScene(previousSceneIndex);
+                YG2.onCloseInterAdv = null; // Отписаться
+            };
+        }
+        else
+        {
+            // Слишком рано — пропустить показ и просто перейти
+            SceneManager.LoadScene(previousSceneIndex);
+        }
     }
     public void PrevLoader()
     {

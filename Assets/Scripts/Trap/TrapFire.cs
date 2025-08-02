@@ -6,14 +6,14 @@ public class TrapFire : TrapDamage
 {
     private Animator animator;
 
-    private bool isWorling;
+    private bool isWorking;
 
     [SerializeField] private float cooldown;
     private float cooldownTimer;
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isWorling)
+        if (isWorking)
         {
             base.OnTriggerEnter2D(collision);
         }
@@ -31,11 +31,11 @@ public class TrapFire : TrapDamage
 
         if (cooldownTimer < 0) 
         { 
-         isWorling = !isWorling;
+         isWorking = !isWorking;
          cooldownTimer = cooldown;
         }
 
-        animator.SetBool("isWorking", isWorling);
+        animator.SetBool("isWorking", isWorking);
     }
 
 }

@@ -35,13 +35,21 @@ public class PlayerInput : MonoBehaviour
         bool isJumpButtonPressed;
         bool fireButtonPressed;
 
-#if UNITY_ANDROID || UNITY_IOS
-        // use touch
-        horizontalDirection    = TouchInputManager.Instance.Horizontal;
-        isJumpButtonPressed    = TouchInputManager.Instance.JumpHeld;
-        fireButtonPressed      = TouchInputManager.Instance.FireHeld;
+#if UNITY_WEBGL && !UNITY_EDITOR
+    // Use only touch input on mobile web
+    if (Application.isMobilePlatform)
+    {
+        horizontalDirection = TouchInputManager.Instance.Horizontal;
+        isJumpButtonPressed = TouchInputManager.Instance.JumpHeld;
+        fireButtonPressed = TouchInputManager.Instance.FireHeld;
+    }
+    else
+    {
+        horizontalDirection = Input.GetAxis(GlobalStringVars.HorizontalAxis);
+        isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.Jump);
+        fireButtonPressed = Input.GetButtonDown(GlobalStringVars.Fire_1);
+    }
 #else
-        // legacy keyboard
         horizontalDirection = Input.GetAxis(GlobalStringVars.HorizontalAxis);
         isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.Jump);
         fireButtonPressed = Input.GetButtonDown(GlobalStringVars.Fire_1);
@@ -57,4 +65,5 @@ public class PlayerInput : MonoBehaviour
         // movement + jump
         playerMovement.Move(horizontalDirection, isJumpButtonPressed);
     }
+
 }
