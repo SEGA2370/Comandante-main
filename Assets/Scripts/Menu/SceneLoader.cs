@@ -2,32 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using YG;
+
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] GameObject prevScene;
     [SerializeField] GameObject optionPanel;
+
+    void Awake()
+    {
+        // Always start unpaused and hide pause panel
+        Time.timeScale = 1f;
+        if (optionPanel != null) optionPanel.SetActive(false);
+    }
 
     private void Update()
     {
         PrevLoader();
 
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
             TogglePause();
-        }
     }
+
     public void TogglePause()
     {
-        // flip panel visibility
+        if (optionPanel == null) return;
+
         bool opening = !optionPanel.activeSelf;
         optionPanel.SetActive(opening);
-
-        // pause when opening, resume when closing
         Time.timeScale = opening ? 0f : 1f;
 
-        Debug.Log($"[SceneLoader] TogglePause called – panel is now {(opening ? "OPEN" : "CLOSED")}, timeScale={Time.timeScale}");
+        Debug.Log($"[SceneLoader] TogglePause – {(opening ? "OPEN" : "CLOSED")}, timeScale={Time.timeScale}");
     }
+
     public void PlayGame()
     {
         if (optionPanel != null && optionPanel.activeSelf)
@@ -39,72 +45,75 @@ public class SceneLoader : MonoBehaviour
 
         Time.timeScale = 1f;
 
-        int sceneToLoad = SaveSystem.HasSavedProgress() ? SaveSystem.LoadLevelProgress() : 1;
+        int sceneToLoad = SaveSystem.HasSavedProgress()
+            ? SaveSystem.LoadLevelProgress()
+            : 1;
+
         SceneManager.LoadScene(sceneToLoad);
     }
 
     public void ResetProgressAndRestart()
     {
         SaveSystem.ResetProgress();
-        SceneManager.LoadScene(1); // или SceneManager.GetActiveScene().buildIndex
+        Time.timeScale = 1f;                         // <<< ensure unpaused
+        SceneManager.LoadScene(1);
     }
 
     public void GoToMenu()
-    { 
+    {
+        Time.timeScale = 1f;                         // <<< ensure unpaused
         SceneManager.LoadScene(0);
     }
+
     public void RestartGame()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+        int current = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+    Time.timeScale = 1f; // ensure unpaused
+    AdsManager.I?.ShowInterstitial(() =>
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(current);
+    });
     }
+
+    public void LoadNextSceneWithRewarded()
+    {
+        int current = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+        int next = current + 1;
+
+        SaveSystem.SaveLevelProgress(next);
+        Time.timeScale = 1f;
+
+        AdsManager.I?.ShowRewarded(success =>
+        {
+            if (success)
+                UnityEngine.SceneManagement.SceneManager.LoadScene(next);
+            else
+                Debug.Log("[Ads] Reward not granted, staying on current level.");
+        });
+    }
+
     public void LoadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
+        int current = SceneManager.GetActiveScene().buildIndex;
+        int next = current + 1;
 
-        SaveSystem.SaveLevelProgress(nextSceneIndex);
-
-        if (YG2.isTimerAdvCompleted)
-        {
-            YG2.InterstitialAdvShow();
-            YG2.onCloseInterAdv += () =>
-            {
-                SceneManager.LoadScene(nextSceneIndex);
-                YG2.onCloseInterAdv = null; // Отписаться
-            };
-        }
-        else
-        {
-            // Слишком рано — пропустить показ и просто перейти
-            SceneManager.LoadScene(nextSceneIndex);
-        }
+        SaveSystem.SaveLevelProgress(next);
+        Time.timeScale = 1f;                         // <<< ensure unpaused
+        SceneManager.LoadScene(next);                // без рекламы
     }
+
     public void LoadPreviousScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int previousSceneIndex = currentSceneIndex - 1;
-        if (YG2.isTimerAdvCompleted)
-        {
-            YG2.InterstitialAdvShow();
-            YG2.onCloseInterAdv += () =>
-            {
-                SceneManager.LoadScene(previousSceneIndex);
-                YG2.onCloseInterAdv = null; // Отписаться
-            };
-        }
-        else
-        {
-            // Слишком рано — пропустить показ и просто перейти
-            SceneManager.LoadScene(previousSceneIndex);
-        }
+        int current = SceneManager.GetActiveScene().buildIndex;
+        int prev = current - 1;
+
+        Time.timeScale = 1f;                         // <<< ensure unpaused
+        SceneManager.LoadScene(prev);                // без рекламы
     }
+
     public void PrevLoader()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        if (currentSceneName == "First_Level")
-        {
-            prevScene.gameObject.SetActive(false);
-        }
+        if (SceneManager.GetActiveScene().name == "First_Level" && prevScene != null)
+            prevScene.SetActive(false);
     }
 }

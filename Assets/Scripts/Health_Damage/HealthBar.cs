@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,8 +11,15 @@ public class HealthBar : MonoBehaviour
 
     void Start()
     {
-        healthPoints.HealthChanged.AddListener(HealtBarUpdate); // Subscribe to the healthChanged event
-        UpdateHealthBar(); // Update health bar initially
+        if (healthPoints == null) { Debug.LogWarning("[HealthBar] No HealthPoints"); return; }
+        healthPoints.HealthChanged.AddListener(UpdateHealthBar);
+        UpdateHealthBar();
+    }
+
+    void OnDestroy()
+    {
+        if (healthPoints != null)
+            healthPoints.HealthChanged.RemoveListener(UpdateHealthBar);
     }
 
     void HealtBarUpdate()

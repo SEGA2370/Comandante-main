@@ -35,25 +35,21 @@ public class PlayerInput : MonoBehaviour
         bool isJumpButtonPressed;
         bool fireButtonPressed;
 
-#if UNITY_WEBGL && !UNITY_EDITOR
-    // Use only touch input on mobile web
-    if (Application.isMobilePlatform)
-    {
-        horizontalDirection = TouchInputManager.Instance.Horizontal;
-        isJumpButtonPressed = TouchInputManager.Instance.JumpHeld;
-        fireButtonPressed = TouchInputManager.Instance.FireHeld;
-    }
-    else
-    {
-        horizontalDirection = Input.GetAxis(GlobalStringVars.HorizontalAxis);
-        isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.Jump);
-        fireButtonPressed = Input.GetButtonDown(GlobalStringVars.Fire_1);
-    }
-#else
-        horizontalDirection = Input.GetAxis(GlobalStringVars.HorizontalAxis);
-        isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.Jump);
-        fireButtonPressed = Input.GetButtonDown(GlobalStringVars.Fire_1);
-#endif
+        // Prefer touch UI on real mobile builds
+        if (Application.isMobilePlatform)
+        {
+            // Use your on-screen buttons’ states
+            horizontalDirection = TouchInputManager.Instance != null ? TouchInputManager.Instance.Horizontal : 0f;
+            isJumpButtonPressed = TouchInputManager.Instance != null && TouchInputManager.Instance.JumpHeld;
+            fireButtonPressed = TouchInputManager.Instance != null && TouchInputManager.Instance.FireHeld;
+        }
+        else
+        {
+            // Desktop / Editor: keyboard & mouse
+            horizontalDirection = Input.GetAxis(GlobalStringVars.HorizontalAxis);
+            isJumpButtonPressed = Input.GetButtonDown(GlobalStringVars.Jump);
+            fireButtonPressed = Input.GetButtonDown(GlobalStringVars.Fire_1);
+        }
 
         // shooting
         if (fireButtonPressed)
@@ -67,3 +63,4 @@ public class PlayerInput : MonoBehaviour
     }
 
 }
+

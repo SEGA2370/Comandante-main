@@ -40,9 +40,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateAnimatorParameters()
     {
-        animator.SetFloat("yVelocity", rigidBody.velocity.y);
-        animator.SetFloat("xVelocity", Mathf.Abs(rigidBody.velocity.x));
-        animator.SetBool("Walk", Mathf.Abs(rigidBody.velocity.x) > 0.01f);
+        animator.SetFloat("yVelocity", rigidBody.linearVelocity.y);
+        animator.SetFloat("xVelocity", Mathf.Abs(rigidBody.linearVelocity.x));
+        animator.SetBool("Walk", Mathf.Abs(rigidBody.linearVelocity.x) > 0.01f);
     }
 
     public void Move(float direction, bool isJumpButtonPressed)
@@ -61,20 +61,20 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             // No horizontal input → stop immediately
-            rigidBody.velocity = new Vector2(0f, rigidBody.velocity.y);
+            rigidBody.linearVelocity = new Vector2(0f, rigidBody.linearVelocity.y);
         }
     }
 
     private void Jump()
     {
-        rigidBody.velocity = new Vector2(rigidBody.velocity.x, jumpForce);
+        rigidBody.linearVelocity = new Vector2(rigidBody.linearVelocity.x, jumpForce);
         animator.SetTrigger("Jump");
     }
 
     private void HorizontalMovement(float direction)
     {
         float scaledDirection = curve.Evaluate(direction) * speed;
-        rigidBody.velocity = new Vector2(scaledDirection, rigidBody.velocity.y);
+        rigidBody.linearVelocity = new Vector2(scaledDirection, rigidBody.linearVelocity.y);
     }
 
     private void Flip(float direction)

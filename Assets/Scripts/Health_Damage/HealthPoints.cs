@@ -49,4 +49,17 @@ public class HealthPoints : MonoBehaviour
             HealthChanged.Invoke();
         }
     }
+    public void ForceRevive(float reviveHealth)
+    {
+        // Clamp to [0..MaxHealth], mark alive if > 0, and notify listeners
+        CurrentHealth = Mathf.Clamp(reviveHealth, 0f, MaxHealth);
+        if (CurrentHealth > 0f)
+        {
+            // mark alive again
+            // (your IsDead uses CurrentHealth <= 0; there’s also 'isAlive' flag)
+            var isAliveField = typeof(HealthPoints).GetField("isAlive", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+            if (isAliveField != null) isAliveField.SetValue(this, true);
+        }
+        HealthChanged.Invoke();
+    }
 }

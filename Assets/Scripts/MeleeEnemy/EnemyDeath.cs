@@ -14,6 +14,12 @@ public class EnemyDeath : MonoBehaviour
         healthPoints.HealthChanged.AddListener(DeathAnim); // Subscribe to the healthChanged event
     }
 
+    void OnDestroy()
+    {
+        if (healthPoints != null)
+            healthPoints.HealthChanged.RemoveListener(DeathAnim); // аналогично в других класcах
+    }
+
     public void DeathAnim()
     {
         if (healthPoints.IsDead)

@@ -38,6 +38,6 @@ public class Shooter : MonoBehaviour
         {
             speed = -fireSpeed;
         }
-        currentBullet.velocity = new Vector2(speed, currentBullet.velocity.y);
+        currentBullet.linearVelocity = new Vector2(speed, currentBullet.linearVelocity.y);
     }
 }

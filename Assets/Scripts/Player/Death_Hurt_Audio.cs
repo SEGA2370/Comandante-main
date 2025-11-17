@@ -13,22 +13,28 @@ public class DeathHurtAudio : MonoBehaviour
 
     void Start()
     {
+        if (playerHealthPoints == null) { Debug.LogWarning("[DeathHurtAudio] No HealthPoints"); return; }
         previousHealth = playerHealthPoints.CurrentHealth;
         playerHealthPoints.HealthChanged.AddListener(OnPlayerHealthChanged);
     }
 
+    void OnDestroy()
+    {
+        if (playerHealthPoints != null)
+            playerHealthPoints.HealthChanged.RemoveListener(OnPlayerHealthChanged);
+    }
+
     void OnPlayerHealthChanged()
     {
+        if (playerHealthPoints == null) return;
         if (playerHealthPoints.CurrentHealth <= 0)
         {
-            deathAudio.Play();
+            if (deathAudio != null) deathAudio.Play();
         }
-        // Check if the current health is less than the previous health
         else if (playerHealthPoints.CurrentHealth < previousHealth)
         {
-            hurtAudio.Play();
+            if (hurtAudio != null) hurtAudio.Play();
         }
         previousHealth = playerHealthPoints.CurrentHealth;
     }
-
 }
