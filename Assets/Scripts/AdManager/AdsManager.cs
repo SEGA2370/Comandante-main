@@ -15,26 +15,20 @@ public class AdsManager : MonoBehaviour
 
     private void Awake()
     {
-        if ( I != null) { Destroy(gameObject); return; }
-        I = this;         
+        if (I != null) { Destroy(gameObject); return; }
+        I = this;
         DontDestroyOnLoad(gameObject);
 
-        // if ads are removed, do not initialize ads
-        if (AdsPolicy.AdsRemoved)
-        {
-            Debug.Log("[AdMob] Ads are removed by policy; skipping initialization.");
-            return;
-        }
-
+        // Всегда инициализируем AdMob – revive нужен даже после Remove Ads
         MobileAds.Initialize(_ =>
         {
             PreloadInterstitial();
             PreloadRewarded();
         });
 
-        // If purchase removes ads, clean up existing ads
         AdsPolicy.OnAdsRemovedChanged += OnAdsRemoved;
     }
+
 
     private void OnDestroy()
     {
@@ -44,8 +38,8 @@ public class AdsManager : MonoBehaviour
     private void OnAdsRemoved()
     {
         // optional: clean up loaded ads
-        interstitial?.Destroy(); interstitial = null;
-        rewarded?.Destroy(); rewarded = null;
+        interstitial?.Destroy();
+        interstitial = null;
     }
 
     #region Interstitial (already used by restart-after-death)
@@ -91,8 +85,7 @@ public class AdsManager : MonoBehaviour
     #region Rewarded
     public void PreloadRewarded()
     {
-        if (AdsPolicy.AdsRemoved) return;
-
+        // НЕ проверяем AdsPolicy.AdsRemoved – revive всегда доступен
         RewardedAd.Load(androidRewardedId, new AdRequest(), (ad, err) =>
         {
             if (err != null) { Debug.LogWarning($"[AdMob] Rewarded load error: {err.GetMessage()}"); return; }

@@ -16,13 +16,26 @@ public class RemoveAdsButtonController : MonoBehaviour
         if (AdsPolicy.AdsRemoved) return;
         SetBusy(true);
 
-        // TODO: replace with real Unity IAP purchase call when product is set up:
-        // IAPManager.I.BuyRemoveAds(productId);
-        // For now we simulate success by granting immediately:
-        IAPManager.I.GrantRemoveAds();
+        if (IAPManager.I == null)
+        {
+            Debug.LogWarning("[UI] No IAPManager in scene");
+            SetBusy(false);
+            return;
+        }
 
-        SetBusy(false);
+        IAPManager.I.BuyRemoveAds(
+            onSuccess: () =>
+            {
+                SetBusy(false);
+                // ”спешно купили Ц AdsPolicy уже обновилс€ внутри GrantRemoveAds()
+            },
+            onFailed: () =>
+            {
+                SetBusy(false);
+                Debug.LogWarning("[UI] Remove Ads purchase failed or cancelled");
+            });
     }
+
 
     void SetBusy(bool busy)
     {
