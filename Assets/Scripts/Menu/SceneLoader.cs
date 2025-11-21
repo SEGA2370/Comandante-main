@@ -83,12 +83,17 @@ public class SceneLoader : MonoBehaviour
         SaveSystem.SaveLevelProgress(next);
         Time.timeScale = 1f;
 
-        AdsManager.I?.ShowRewarded(success =>
+        // Если AdsManager вообще нет – просто грузим следующий уровень
+        if (AdsManager.I == null)
         {
-            if (success)
-                UnityEngine.SceneManagement.SceneManager.LoadScene(next);
-            else
-                Debug.Log("[Ads] Reward not granted, staying on current level.");
+            SceneManager.LoadScene(next);
+            return;
+        }
+
+        AdsManager.I.ShowRewarded(success =>
+        {
+            // В ЛЮБОМ случае переходим на следующий уровень
+            SceneManager.LoadScene(next);
         });
     }
 

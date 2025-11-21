@@ -1,5 +1,5 @@
 # ninja log v5
-311	793	7847330414671442	D:/Unity/Comandante-main/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1h2o273o/obj/armeabi-v7a/libswappywrapper.so	85b1bee2c30deacb
-1	311	7847330409817623	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d47c2000665db5eb
-1	276	7850691631371245	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d47c2000665db5eb
-276	725	7850691635911272	D:/Unity/Comandante-main/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1h2o273o/obj/armeabi-v7a/libswappywrapper.so	85b1bee2c30deacb
+2	276	7853323725821754	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d47c2000665db5eb
+276	746	7853323730572536	D:/Unity/Comandante-main/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1h2o273o/obj/armeabi-v7a/libswappywrapper.so	85b1bee2c30deacb
+1	385	7853345268970625	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d47c2000665db5eb
+386	802	7853345273171799	D:/Unity/Comandante-main/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1h2o273o/obj/armeabi-v7a/libswappywrapper.so	85b1bee2c30deacb
